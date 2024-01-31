@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Buying</title>
+</head>
+<body class="bg-black text-white">
+    <section class="container" id="cont">
+        <h1 class="fw-normal mt-4">Order Now</h1>
+        <div class="alert alert-black" id="empty_alert" style="display: none; background-color: red;" >Please complete all fields !</div>
+        <div class="alert alert-black" id="added_alert" style="display: none; background-color:green;" >Requested Ordered</div>
+
+        <div id="boss_form">
+    <label class="fw-normal form-label">Name</label>
+    <input class="form-control" type="text" required autofocus id="input_name">
+    <label class="fw-normal form-label mt-3">Address</label>
+    <input class="form-control" type="text" required id="input_address">
+    <label class="fw-normal form-label mt-3">Email</label>
+    <input class="form-control" type="email" required id="input_email" >
+    <label class="fw-normal form-label mt-3">Phone</label>
+    <input class="form-control" type="number"  required id="input_phone">
+        </div>
+    <button class="btn btn-light w-100 rounded-pill mt-5" id="btn_sub">Submit</button>
+    <table class="table mt-5">
+        <thead>
+            <tr>
+                <th class="col text-white fw-normal">Name</th>
+                <th class="col text-white fw-normal">Address</th>
+                <th class="col text-white fw-normal">Email</th>
+                <th class="col text-white fw-normal">Phone</th>
+            </tr>
+        </thead>
+        <tbody id="adding_list">
+        </tbody>
+    </table>
+    </section>
+    <script src="time.js"></script>
+    <script src="all.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
